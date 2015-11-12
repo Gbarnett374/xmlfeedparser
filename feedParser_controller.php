@@ -2,7 +2,7 @@
 
 require './feedParserClass.php';
 
-$url = '';
+$url = './products.xml';
 $filter = "category";
 /*Index is the postion of the element you want to filter. 
 If the elements in the node are not separated by a delimiter then use 0. 
