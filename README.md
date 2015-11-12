@@ -1,4 +1,5 @@
 # xmlfeedparser
+Tested using PHP 5.5.29
 
 PHP CLI Program. Takes an XML file and parses it into separate XML & jSON files based on a specified filter. 
 
@@ -13,3 +14,8 @@ The program allows you to set the filter, index, and delimiter parameters.
 If the tag that you are filtering by contains more then one item separated by a delimiter, then specifiy the delimiter, and the position of the item you want to filter by using a 0 based index.
 
 Otherwise you can leave the default delimiter and set the index to 0 to take the first item in the tag. 
+
+To run program:
+php feedParser_controller.php 
+
+Program will create a a feed folder inside /tmp which will contain the xml & jSON files. 
