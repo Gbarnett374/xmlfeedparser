@@ -13,17 +13,17 @@ $delimiter = ">";
 $directory = "/tmp/feed"; 
 
 $params = [
-	"url"       => $url,
-	"filter"    => $filter,
-	"index"	    => $index,
-	"delimiter" => ">"
+    "url"       => $url,
+    "filter"    => $filter,
+    "index"     => $index,
+    "delimiter" => ">"
 ];
 
-try{
-	$parser = new feedParser($params);
-	$parser->filterFeed();
-	$parser->write($directory);
-	
+try {
+    $parser = new feedParser($params);
+    $parser->filterFeed();
+    $parser->write($directory);
+    
 } catch (Exception $e) {
-	echo $e->getMessage();
+    echo $e->getMessage();
 }
